@@ -221,7 +221,7 @@ img { max-width: 100%; display: block; }
 .hint a { color: var(--accent); }
 
 /* Certifications */
-.certs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.certs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
 .cert {
   display: flex; flex-direction: column; text-decoration: none;
   background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
