@@ -22,6 +22,7 @@
       <a class="mark" href="#" aria-label="Home">TT</a>
       <nav class="nav" aria-label="Main">
         <a href="#work">Work</a>
+        <a href="#startup">Startup</a>
         <a href="#architecture">Architecture</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -146,8 +147,72 @@
       </div>
     </section>
 
+    <section id="startup" class="wrap section">
+      <h2 class="section__title"><span>02</span> Startup pitch: LandOpt</h2>
+      <p class="section__intro">Beyond class projects, my team of three software engineering students took a product idea through RMUTL's University Business Incubator (UBI) startup programme in Chiang Mai, from problem research and a UI prototype to a five-minute pitch in front of a judging panel (February 2026).</p>
+
+      <figure class="photo photo--wide">
+        <img src="assets/startup/pitch-stage.jpg" alt="Our team pitching 'AI land tax assessment and vacant-land management' on stage, with the 5-minute timer running" loading="lazy">
+        <figcaption>Pitching on stage. Every team had five minutes, then questions from the judges.</figcaption>
+      </figure>
+
+      <div class="startup">
+        <div class="startup__text">
+          <p class="tag">PropTech · AI · Business model</p>
+          <h3>TaxSave.AI: turning vacant-land tax into liquidity</h3>
+          <p><strong>The problem.</strong> Thai landowners who leave a plot unused pay a vacant-land tax that rises every three years, and selling costs about 3.3% in transfer tax. Investors, meanwhile, spend weeks paying people to check zoning before they buy. Most property sites list a price, but investors want to see the return.</p>
+          <p><strong>Our solution.</strong> An AI land-use and tax simulator. The owner enters a title-deed number and the plot size, and the system:</p>
+          <ul class="points">
+            <li>Calculates the tax under current law and charts <em>vacant</em> against <em>agricultural</em> use</li>
+            <li>Analyses the location with GIS data to recommend the most valuable exit</li>
+            <li>Offers a one-click action: hire a partner to farm the plot (cutting the tax), or send a feasibility report to B2B investors</li>
+          </ul>
+          <p><strong>Business model.</strong> A 3% commission on deals, B2B SaaS subscriptions for developers and architects, and pay-per-use zoning feasibility reports. We asked for 200,000 THB in pre-seed funding.</p>
+          <p><strong>What we built.</strong> A high-fidelity UI prototype covering the whole user journey, the rules of the Land and Building Tax Act turned into a data flow, and a system architecture ready for the MVP.</p>
+          <div class="cta cta--tight">
+            <a class="btn btn--solid" href="assets/startup/landopt-pitch-deck.pdf" target="_blank" rel="noopener">Pitch deck (PDF)</a>
+            <a class="btn" href="assets/startup/poster.jpg" target="_blank" rel="noopener">Project poster</a>
+          </div>
+        </div>
+        <figure class="photo">
+          <a href="assets/startup/poster.jpg" target="_blank" rel="noopener"><img src="assets/startup/poster.jpg" alt="Project poster showing the TaxSave.AI prototype, features, target customers and team" loading="lazy"></a>
+          <figcaption>Project poster with the TaxSave.AI prototype screens.</figcaption>
+        </figure>
+      </div>
+
+      <div class="photos">
+        <figure class="photo">
+          <img src="assets/startup/mentor-session.jpg" alt="A mentor from the incubator giving our team feedback at our table" loading="lazy">
+          <figcaption>Feedback from an incubator mentor during the workshop</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/startup/team.jpg" alt="Our team working on laptops at the workshop" loading="lazy">
+          <figcaption>Team LandOpt at work</figcaption>
+        </figure>
+        <figure class="photo">
+          <img src="assets/startup/judges-qa.jpg" alt="Answering questions from the judging panel after the pitch" loading="lazy">
+          <figcaption>Q&amp;A with the judging panel</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="subhead">Pitch deck</h3>
+      <div class="slides" tabindex="0" aria-label="Pitch deck slides, scroll sideways">
+        <img src="assets/startup/slides/slide-01.jpg" alt="Slide 1: AI land tax assessment and vacant-land management" loading="lazy">
+        <img src="assets/startup/slides/slide-02.jpg" alt="Slide 2: The pain points" loading="lazy">
+        <img src="assets/startup/slides/slide-03.jpg" alt="Slide 3: Solution and product" loading="lazy">
+        <img src="assets/startup/slides/slide-04.jpg" alt="Slide 4: Product screens" loading="lazy">
+        <img src="assets/startup/slides/slide-05.jpg" alt="Slide 5: Business model" loading="lazy">
+        <img src="assets/startup/slides/slide-06.jpg" alt="Slide 6: Traction" loading="lazy">
+        <img src="assets/startup/slides/slide-07.jpg" alt="Slide 7: Team" loading="lazy">
+        <img src="assets/startup/slides/slide-08.jpg" alt="Slide 8: Competition" loading="lazy">
+        <img src="assets/startup/slides/slide-09.jpg" alt="Slide 9: Fundraising ask" loading="lazy">
+        <img src="assets/startup/slides/slide-10.jpg" alt="Slide 10: Thank you" loading="lazy">
+      </div>
+      <p class="hint">Scroll sideways to see all 10 slides (in Thai), or <a href="assets/startup/landopt-pitch-deck.pdf" target="_blank" rel="noopener">open the PDF</a>.</p>
+    </section>
+
     <section id="architecture" class="wrap section">
-      <h2 class="section__title"><span>02</span> One app, five architectures</h2>
+      <h2 class="section__title"><span>03</span> One app, five architectures</h2>
       <p class="section__intro">In my Software Architecture course I rebuilt the same task board five times. Each repository documents what changed and why.</p>
       <ol class="timeline">
         <li><a href="https://github.com/tawan230666/engse207-week4-layered" target="_blank" rel="noopener"><span>Layered</span><small>Controllers, services and repositories in one process</small></a></li>
@@ -159,7 +224,7 @@
     </section>
 
     <section id="skills" class="wrap section">
-      <h2 class="section__title"><span>03</span> Toolbox</h2>
+      <h2 class="section__title"><span>04</span> Toolbox</h2>
       <div class="skills">
         <div><h4>Languages</h4><p>TypeScript, JavaScript, Python, Dart, Java, C/C++, SQL</p></div>
         <div><h4>Frontend</h4><p>React, Vite, Tailwind CSS, Zustand, Flutter, Electron</p></div>
@@ -168,10 +233,26 @@
         <div><h4>DevOps</h4><p>Docker Compose, Nginx, GitHub Actions, Railway, Grafana + Loki</p></div>
         <div><h4>Machine learning</h4><p>PyTorch, Ultralytics YOLO, OpenCV, pandas, scikit-learn</p></div>
       </div>
+
+      <h3 class="subhead">Certifications</h3>
+      <div class="certs">
+        <a class="cert" href="assets/certificates/fortinet-ngfw.pdf" target="_blank" rel="noopener">
+          <img src="assets/certificates/fortinet-ngfw.jpg" alt="Fortinet certificate: Introduction to Next Generation Firewall" loading="lazy">
+          <span><strong>Introduction to Next Generation Firewall</strong><small>Fortinet Training Institute · 2026</small></span>
+        </a>
+        <a class="cert" href="assets/certificates/fortinet-cybersecurity-cloud.pdf" target="_blank" rel="noopener">
+          <img src="assets/certificates/fortinet-cybersecurity-cloud.jpg" alt="Fortinet certificate: Cybersecurity and Cloud Fundamentals" loading="lazy">
+          <span><strong>Cybersecurity and Cloud Fundamentals</strong><small>Fortinet Training Institute · 2026</small></span>
+        </a>
+        <a class="cert" href="assets/certificates/rmutl-web-hacking-awareness.pdf" target="_blank" rel="noopener">
+          <img src="assets/certificates/rmutl-web-hacking-awareness.jpg" alt="RMUTL certificate: Web hacking awareness workshop" loading="lazy">
+          <span><strong>Web Hacking Awareness Workshop</strong><small>RMUTL Cybersecurity AIoT Research Unit · Dec 2025</small></span>
+        </a>
+      </div>
     </section>
 
     <section id="contact" class="wrap section contact">
-      <h2 class="section__title"><span>04</span> Let's talk</h2>
+      <h2 class="section__title"><span>05</span> Let's talk</h2>
       <p class="contact__lead">I'm looking for internship and junior software engineering roles. The fastest way to reach me is by email.</p>
       <a class="contact__mail" href="mailto:tawantippkun200501@gmail.com">tawantippkun200501@gmail.com</a>
       <p class="contact__links"><a href="https://github.com/tawan230666" target="_blank" rel="noopener">GitHub ↗</a></p>
