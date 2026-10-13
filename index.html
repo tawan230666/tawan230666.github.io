@@ -1,213 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tawan - Porfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tawan Tiphkun · Software Engineer</title>
+  <meta name="description" content="Tawan Tiphkun, Software Engineering student at RMUTL Chiang Mai. Full-stack web apps, distributed backends and applied machine learning.">
+  <meta property="og:title" content="Tawan Tiphkun · Software Engineer">
+  <meta property="og:description" content="Full-stack web apps, distributed backends and applied machine learning.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/tawan230666/SuperApp/main/docs/previews/overview-1440.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navder">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Porfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
+  <a class="skip" href="#work">Skip to projects</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero" >
-        <div class="hero-content">
-            <h1>Hello, I'm <span class="highlight"> Tawan Tippkhun </span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
-            <p class="hero-description">I create beautiful and functional web applications</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="images/profile.jpg" alt="My photo">
-        </div>
+  <header class="top">
+    <div class="wrap top__row">
+      <a class="mark" href="#" aria-label="Home">TT</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#work">Work</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9Z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <p class="eyebrow">Software Engineering · RMUTL Chiang Mai, Thailand</p>
+      <h1>I build software that <em>holds up</em> in production: real-time apps, distributed backends and practical ML.</h1>
+      <p class="lede">I'm Tawan Tiphkun, a software engineering student. I like taking a real problem, such as a restaurant's paper order slips, a trader who can't stop chasing losses or a production line counting beans by eye, and shipping something that solves it end to end.</p>
+      <div class="cta">
+        <a class="btn btn--solid" href="#work">See my work</a>
+        <a class="btn" href="https://github.com/tawan230666" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="mailto:tawantippkun200501@gmail.com">Email me</a>
+      </div>
+      <dl class="facts">
+        <div><dt>0.91</dt><dd>mAP@50 on my custom YOLO detector</dd></div>
+        <div><dt>5</dt><dd>architectures of one system, from layered to microservices</dd></div>
+        <div><dt>3</dt><dd>real-time apps sharing one BizFlow backend</dd></div>
+      </dl>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>I am passionate Full Stack Developer with experience in</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>2+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>15+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="images/about.jpg" alt="">
-                </div>
-            </div>
+    <section id="work" class="wrap section">
+      <h2 class="section__title"><span>01</span> Selected work</h2>
+
+      <article class="feature">
+        <div class="feature__text">
+          <p class="tag">Full-stack · Team project</p>
+          <h3>BizFlow: QR table ordering</h3>
+          <p>Diners scan a QR code at their table, order from their phone and pay with a PromptPay QR. The kitchen and cashier see every order change instantly.</p>
+          <ul class="points">
+            <li>Prices are always recomputed on the server, so a tampered request can't change the bill</li>
+            <li>JWT roles (admin, kitchen, cashier) guard every endpoint</li>
+            <li>Orders, payments and table state change together in one database transaction</li>
+            <li>Socket.IO rooms push live order status to the kitchen and to each diner</li>
+          </ul>
+          <p class="stack">TypeScript · React · Express · Prisma · MySQL · Socket.IO · Docker</p>
+          <a class="link" href="https://github.com/tawan230666/bizflow-monorepo-demo" target="_blank" rel="noopener">View the code ↗</a>
         </div>
+        <div class="feature__visual diagram" aria-hidden="true">
+          <div class="node">Customer app</div>
+          <div class="node">Staff console</div>
+          <div class="arrow">↓ REST + WebSocket ↓</div>
+          <div class="node node--main">API · Express + Prisma</div>
+          <div class="arrow">↓</div>
+          <div class="node node--db">MySQL</div>
+        </div>
+      </article>
+
+      <article class="feature feature--flip">
+        <div class="feature__text">
+          <p class="tag">Mobile · Flutter</p>
+          <h3>Tipkhun Capital</h3>
+          <p>Most small traders don't lose money on one bad trade. They lose it by not stopping. This app turns a risk plan into hard numbers: a daily loss budget, a trade journal, an automatic STOP state and rules for splitting profit.</p>
+          <p class="stack">Flutter · Dart · iOS · Android · Web</p>
+          <a class="link" href="https://github.com/tawan230666/SuperApp" target="_blank" rel="noopener">View the code ↗</a>
+        </div>
+        <figure class="feature__visual shot">
+          <img src="https://raw.githubusercontent.com/tawan230666/SuperApp/main/docs/previews/overview-1440.png" alt="Tipkhun Capital overview showing the remaining daily risk budget" loading="lazy">
+        </figure>
+      </article>
+
+      <article class="feature">
+        <div class="feature__text">
+          <p class="tag">Machine learning · Computer vision</p>
+          <h3>Bean snack detection with YOLO</h3>
+          <p>A custom detector that finds and classifies the 5 ingredients of a Thai mixed-bean snack in photos, video and a live camera feed. I built every stage myself: data collection, labelling, dataset tooling, training, evaluation and inference.</p>
+          <ul class="points">
+            <li><strong>0.914</strong> mAP@50 and <strong>0.93</strong> recall on held-out images</li>
+            <li>About 120 ms per image on a CPU, with no GPU</li>
+          </ul>
+          <p class="stack">Python · Ultralytics YOLO · PyTorch · OpenCV · Label Studio</p>
+          <a class="link" href="https://github.com/tawan230666/yolo-bean-detection" target="_blank" rel="noopener">View the code ↗</a>
+        </div>
+        <figure class="feature__visual shot shot--square">
+          <img src="https://raw.githubusercontent.com/tawan230666/yolo-bean-detection/main/docs/detection-example.jpg" alt="Model detecting peanuts, broad beans and green peas" loading="lazy">
+        </figure>
+      </article>
+
+      <div class="grid">
+        <a class="card" href="https://github.com/tawan230666/engse207-termproject-jwt-microservices" target="_blank" rel="noopener">
+          <p class="tag">Backend · Security</p>
+          <h4>Secure Task Board</h4>
+          <p>Microservices behind an Nginx gateway with JWT and RBAC, rate limiting, a database per service, and Grafana + Loki logging.</p>
+          <p class="stack">Node.js · PostgreSQL · Nginx · Docker</p>
+        </a>
+        <a class="card" href="https://github.com/tawan230666/RPG-game_system_design" target="_blank" rel="noopener">
+          <p class="tag">Database design</p>
+          <h4>RPG Game Database</h4>
+          <p>Game rules enforced with constraints and triggers, plus an admin panel with role-based access, bans and an audit log.</p>
+          <p class="stack">MySQL · Express · EJS</p>
+        </a>
+        <a class="card" href="https://github.com/tawan230666/engse203-lab6-database-integration" target="_blank" rel="noopener">
+          <p class="tag">Real-time backend</p>
+          <h4>Agent Wallboard</h4>
+          <p>Call-center backend that pushes every agent status change to dashboards over WebSockets. Joi validation, Jest tests and CI.</p>
+          <p class="stack">Express · MongoDB · Socket.IO · Jest</p>
+        </a>
+        <a class="card" href="https://github.com/tawan230666/Lab-8.2-IPC-Communication" target="_blank" rel="noopener">
+          <p class="tag">Desktop</p>
+          <h4>Secure Electron IPC</h4>
+          <p>A sandboxed renderer, a minimal contextBridge API and allow-list validation in the main process.</p>
+          <p class="stack">Electron · JavaScript</p>
+        </a>
+        <a class="card" href="https://github.com/tawan230666/Task1-User-Management" target="_blank" rel="noopener">
+          <p class="tag">Full-stack</p>
+          <h4>User Management Admin</h4>
+          <p>React admin panel and layered API with admin-only access, soft delete and real-time agent presence.</p>
+          <p class="stack">React · Express · SQLite · JWT</p>
+        </a>
+        <a class="card" href="https://github.com/tawan230666/restaurant-review-app" target="_blank" rel="noopener">
+          <p class="tag">Full-stack</p>
+          <h4>Restaurant Review App</h4>
+          <p>Debounced live search, combinable filters, and reviews that are validated on the client and the server.</p>
+          <p class="stack">React · Vite · Express</p>
+        </a>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skills-item">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and modern HTML5 features</p>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and modern CSS techniques</p>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <p>ES6+ features and modern JavaScript</p>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-react"></i>
-                    <h3>React</h3>
-                    <p>Conponent-based UI development</p>
-                </div>
-                <div class="skills-item">
-                    <i class="fab fa-node-js"></i>
-                    <h3>Node.js</h3>
-                    <p>Server-side JavaScript development</p>
-                </div>
-                <div class="skills-item">
-                    <i class="fas fa-database"></i>
-                    <h3>MongoDB</h3>
-                    <p>NoSQL database management</p>
-                </div>
-            </div>
-        </div>
+    <section id="architecture" class="wrap section">
+      <h2 class="section__title"><span>02</span> One app, five architectures</h2>
+      <p class="section__intro">In my Software Architecture course I rebuilt the same task board five times. Each repository documents what changed and why.</p>
+      <ol class="timeline">
+        <li><a href="https://github.com/tawan230666/engse207-week4-layered" target="_blank" rel="noopener"><span>Layered</span><small>Controllers, services and repositories in one process</small></a></li>
+        <li><a href="https://github.com/tawan230666/engse207-task-board" target="_blank" rel="noopener"><span>N-tier + Docker</span><small>Nginx, API and PostgreSQL as separate containers</small></a></li>
+        <li><a href="https://github.com/tawan230666/Week6_lab_ntier_redis_loadbalance" target="_blank" rel="noopener"><span>Scaled + cached</span><small>3 API instances, round-robin load balancing, Redis cache-aside with graceful fallback</small></a></li>
+        <li><a href="https://github.com/tawan230666/week7_lab_event_driven_rabbitmq" target="_blank" rel="noopener"><span>Event-driven</span><small>RabbitMQ fanout to independent notification and audit consumers</small></a></li>
+        <li><a href="https://github.com/tawan230666/engse207-termproject-jwt-microservices" target="_blank" rel="noopener"><span>Secured microservices</span><small>A gateway, JWT, a database per service, deployed to Railway</small></a></li>
+      </ol>
     </section>
 
-    <!-- Project Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Project</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <img src="images/project.jpg" alt="Project 1">
-                    <div class="project-info">
-                        <h3>E-commerce Website</h3>
-                        <p>A full-stack e-commerce solution built with React and Node.js</p>
-                        <div class="project-links">
-                            <a href="https://www.google.com/?hl=th" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project.jpg" alt="Project 2">
-                    <div class="project-info">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates</p>
-                        <div class="project-links">
-                            <a href="https://www.google.com/?hl=th" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="images/project.jpg" alt="Project 3">
-                    <div class="project-info">
-                        <h3>Weather App</h3>
-                        <p>A responsive weather application with location-based forecasts</p>
-                        <div class="project-links">
-                            <a href="https://www.google.com/?hl=th" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section id="skills" class="wrap section">
+      <h2 class="section__title"><span>03</span> Toolbox</h2>
+      <div class="skills">
+        <div><h4>Languages</h4><p>TypeScript, JavaScript, Python, Dart, Java, C/C++, SQL</p></div>
+        <div><h4>Frontend</h4><p>React, Vite, Tailwind CSS, Zustand, Flutter, Electron</p></div>
+        <div><h4>Backend</h4><p>Node.js, Express, Prisma, REST, Socket.IO, JWT, RabbitMQ</p></div>
+        <div><h4>Data</h4><p>PostgreSQL, MySQL, MongoDB, Redis, SQLite</p></div>
+        <div><h4>DevOps</h4><p>Docker Compose, Nginx, GitHub Actions, Railway, Grafana + Loki</p></div>
+        <div><h4>Machine learning</h4><p>PyTorch, Ultralytics YOLO, OpenCV, pandas, scikit-learn</p></div>
+      </div>
     </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's work together</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>tawantippkun200501@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+66 81703303</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Phrae Province, Thailand</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/tawan230666"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
+    <section id="contact" class="wrap section contact">
+      <h2 class="section__title"><span>04</span> Let's talk</h2>
+      <p class="contact__lead">I'm looking for internship and junior software engineering roles. The fastest way to reach me is by email.</p>
+      <a class="contact__mail" href="mailto:tawantippkun200501@gmail.com">tawantippkun200501@gmail.com</a>
+      <p class="contact__links"><a href="https://github.com/tawan230666" target="_blank" rel="noopener">GitHub ↗</a></p>
     </section>
+  </main>
 
+  <footer class="wrap foot">
+    <p>© <span data-year>2026</span> Tawan Tiphkun · Hand-built with HTML, CSS and a little JavaScript</p>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Your Name. Software Engineering, RMUTL. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

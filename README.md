@@ -1,23 +1,34 @@
-# Portfolio Website
-https://tawan230666.github.io/portfolio-website/
+# Personal Portfolio
 
-## 📌 Description
-A responsive personal portfolio website built with HTML, CSS, and JavaScript.
+**My portfolio site: featured projects, the five-architecture task board series, my toolbox and contact details.**
 
-## 🚀 Live Demo
-[Click to view](https://tawan230666.github.io/portfolio-website/)
+🔗 **Live:** https://tawan230666.github.io/portfolio-website/
 
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?logo=githubpages&logoColor=white)
 
-## 🔧 Features Added
-- Animated hero section using CSS
-- Smooth scroll effect
-- Responsive mobile navigation menu
-- Contact form validation
+## Design decisions
 
-## 📚 How to Use
-1. Clone this repo
-2. Open `index.html` in your browser
-3. Or deploy using GitHub Pages / Netlify
+- **No framework, no build step.** The page is one HTML file, one stylesheet and about 20 lines of JavaScript, so it loads fast and deploys straight from `main` to GitHub Pages.
+- **Content first.** Every project card links to a real repository, and every number on the page (such as 0.91 mAP@50) comes from that project's README.
+- **Light and dark themes.** Colours are CSS custom properties. The site follows the OS setting by default, and the toggle remembers the visitor's choice (with a safe fallback when storage is blocked).
+- **Responsive and accessible.** One-column layout on phones with no horizontal scroll, a skip link, semantic landmarks, descriptive `alt` text, and `prefers-reduced-motion` support.
 
-## 🙋‍♂️ Author
-Tawan Tippkun – Software Engineering, RMUTL
+## Structure
+
+```
+index.html        page content
+css/style.css     design tokens, layout, light/dark themes
+js/main.js        theme toggle and footer year
+assets/           favicon
+```
+
+## Run locally
+
+```bash
+git clone https://github.com/tawan230666/portfolio-website.git
+cd portfolio-website
+python3 -m http.server 8000   # then open http://localhost:8000
+```
