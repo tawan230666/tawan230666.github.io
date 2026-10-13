@@ -2,7 +2,7 @@
 
 **My portfolio site: featured projects, a startup pitch, the five-architecture task board series, my toolbox and certifications.**
 
-🔗 **Live:** https://tawan230666.github.io/portfolio-website/
+🔗 **Live:** https://tawan230666.github.io/
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
@@ -29,7 +29,7 @@ assets/           favicon, startup pitch photos, slides and deck PDF, certificat
 ## Run locally
 
 ```bash
-git clone https://github.com/tawan230666/portfolio-website.git
-cd portfolio-website
+git clone https://github.com/tawan230666/tawan230666.github.io.git
+cd tawan230666.github.io
 python3 -m http.server 8000   # then open http://localhost:8000
 ```
